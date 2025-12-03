@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link rel="stylesheet" href="style.css">
+
+   <title>Modern Login UI</title>
+</head>
+<body>
+
+<div class="main-box">
+
+   <!-- LEFT -->
+   <div class="left-side">
+      <img src="back1.png" class="side-video" alt="Side Image">
+
+      <div class="left-text">
+         <p class="small-text">Welcome Back</p>
+         <h1>Hello Developer,<br>Sign In To Get Started</h1>
+      </div>
+
+      <div class="left-social">
+         <p>Our Social Media</p>
+         <div class="icons">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-twitter-x-fill"></i>
+            <i class="ri-dribbble-line"></i>
+            <i class="ri-github-fill"></i>
+         </div>
+      </div>
+   </div>
+
+   <!-- RIGHT LOGIN -->
+   <div class="right-side">
+
+      <div class="logo-box">
+        <img src="logo.gif" alt="Logo">
+      </div>
+
+      <p class="sub">Please enter your details.</p>
+
+      <button class="apple-btn">
+         <i class="ri-Google-fill"></i> Sign in with Google
+      </button>
+
+      <div class="divider">
+         <span></span> or <span></span>
+      </div>
+
+      <form onsubmit="login(event)">
+         <div class="input-box">
+            <input type="email" id="loginEmail" placeholder="user@email.com" required>
+            <i class="ri-mail-line"></i>
+         </div>
+
+         <div class="input-box">
+            <input type="password" id="loginPass" placeholder="Password" required>
+            <i class="ri-eye-line"></i>
+         </div>
+
+         <a href="#" class="forgot">Forgot Password?</a>
+
+         <button class="login-btn" type="submit">Log In</button>
+      </form>
+
+      <p class="signup-text">
+         Don't have an account? <a href="signup.html">Sign Up</a>
+      </p>
+
+      <p id="loginMsg" class="msg"></p>
+   </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
